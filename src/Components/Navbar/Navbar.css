@@ -1,0 +1,467 @@
+.logo {
+  width: 200px;
+}
+/* .mobilenav {
+ z-index: 99999;
+} */
+
+.navHeader li a {
+  font-size: 18px;
+  color: #000000;
+  font-weight: 500;
+  line-height: 31px;
+  text-decoration: none;
+  margin-left: 40px;
+  cursor: pointer;
+}
+/* navbar mobile*/
+
+.barIcondiv {
+  display: inline-block;
+}
+
+.bars {
+  cursor: pointer;
+}
+
+.mobilenav {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  display: none; /* Initially hide the menu */
+  z-index: 9999;
+  margin-top: 10px;
+}
+
+.mobilenav.open {
+  display: block; /* Show the menu when open class is added */
+}
+
+.mobilenav .mob-nav-content {
+  padding: 20px;
+}
+
+.mobilenav .cross-btn {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin-bottom: 10px;
+}
+
+.mobilenav .cross-btn i {
+  font-size: 18px;
+}
+
+.mobilenav .nav-content-bttn {
+  display: block;
+  padding: 10px;
+  margin-bottom: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.mobilenav .nav-content-bttn:hover {
+  background-color: #e1e1e1;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.bars,
+.cross-btnLanding {
+  cursor: pointer;
+  animation-duration: 0.5s;
+  animation-fill-mode: both;
+  animation-timing-function: linear;
+}
+
+.rotate-in {
+  animation-name: rotate;
+}
+
+.rotate-out {
+  animation-name: rotate;
+  animation-direction: reverse;
+}
+.cross-btnLanding {
+  border: none;
+  background: initial;
+}
+.cross-btnLanding i {
+  font-size: 28px;
+}
+.mobilenav ul {
+  list-style-type: none;
+  padding: 0px;
+}
+.mobilenav ul li {
+  font-size: 18px;
+  font-weight: 600;
+}
+.mobilenav ul li a.active {
+  background-color: #f0f3f4;
+  color: #001A72;
+}
+.mob-nav-content {
+  position: relative;
+  animation-duration: 0.3s;
+  animation-fill-mode: both;
+}
+
+.slide-up {
+  animation-name: slideUp;
+}
+
+.slide-down {
+  animation-name: slideDown;
+  animation-direction: reverse;
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(100%);
+  }
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+@keyframes slideDown {
+  0% {
+    transform: translateY(0%);
+  }
+  100% {
+    transform: translateY(100%);
+  }
+}
+/* navbar mobile end */
+.MobileSection {
+  display: none;
+}
+.hamburger-icon {
+  width: 28px;
+}
+.navHeader li a.active, .mob-nav-content li a.active {
+  color: #001A72;
+  font-weight: 700;
+}
+.buttontryNow {
+  line-height: 20px;
+  background-color: #001A72;
+  border-radius: 74px;
+  color: #ffffff;
+  border: 1px solid transparent;
+  font-size: 18px;
+  font-weight: 600;
+  padding: 10px 20px;
+}
+.buttontryNow:hover {
+  background-color: #ffffff;
+  color: #001A72;
+  border: 1px solid #001A72;
+}
+
+
+
+.pridctivediv {
+  display: flex;
+  padding: 20px 0px 20px 0px;
+  align-items: center;
+}
+.pridctivediv img {
+  height: 65px;
+  margin-right: 30px;
+}
+.pridctivediv h4 {
+  color: #ffffff;
+  line-height: 38px;
+}
+
+
+
+
+
+
+
+/* Container styles */
+.header-container {
+  position: relative;
+  /* Add other styles for the container as needed */
+}
+.nonsticky header{
+  padding: 10px 0px 10px 0px;
+}
+/* Add styles for the sticky header within the container */
+/* .header-container.sticky header {
+  position: fixed;
+  top: 0;
+  background-color: #ffffff;
+  width: 100%;
+  left: 0;
+  padding: 10px 120px 10px 120px;
+  transition: box-shadow 0.3s ease;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+} */
+/* Add styles for the sticky header within the container */
+.header-container.sticky header .hamburger-icon {
+  width: 22px;
+}
+.header-container.sticky header {
+  position: fixed;
+  top: 0;
+  background-color: #ffffff; /* Add your desired background color for the sticky header */
+  width: 100%;
+  left: 0;
+  padding: 10px 120px 10px 120px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  /* Add a smooth transition for the box-shadow property */
+  transition: box-shadow 0.3s ease, opacity 0.3s ease;
+  /* Add an opacity animation to create a fade-in effect */
+  opacity: 0;
+  animation: fadeIn 0.3s ease forwards; /* Use keyframes animation for fade-in effect */
+  z-index:99999;
+}
+
+/* Add a bottom shadow to the sticky header when it becomes sticky */
+.header-container.sticky header {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Add your desired box-shadow style */
+  opacity: 1; /* Set opacity to 1 when the header becomes sticky */
+}
+.header-container.sticky header .logo {
+  height: auto;
+  width: 110px;
+}
+.header-container.sticky header .navHeader li a {
+  font-size: 15px;
+  color: #000000;
+  font-weight: 500;
+  line-height: 31px;
+  text-decoration: none;
+  padding-left: 20px;
+}
+.header-container.sticky header .buttontryNow {
+  font-size: 14px;
+  padding: 7px 18px;
+}
+.header-container.sticky header .navHeader li a.active,.header-container.sticky header .mob-nav-content li a.active {
+  color: #001A72;
+  font-weight: 600;
+}
+.mobilenav ul li a.active {
+  background-color: #f0f3f4;
+  color: #00c7f4;
+}
+/* Keyframes animation for fade-in effect */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.FormInputDivLanding .error {
+  font-size: 14px;
+  color: red;
+}
+.extra-para {
+  color: #000000;
+  font-weight: 400;
+}
+@media screen and (max-width: 1200px) {
+  .courierImageDiv {
+    margin-top: -258px;
+    text-align: end;
+    margin-right: 0px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .MobileSection {
+    display: block;
+  }
+  .CusLapHeader {
+    display: none;
+  }
+  .FormInputDivLanding {
+    padding: 20px 20px;
+}
+}
+@media screen and (max-width: 768px) {
+  .EmporingData {
+    line-height: 50px;
+    font-weight: 700;
+  }
+  .Btnmt {
+    display: block;
+    margin: 40px auto 30px auto;
+  }
+  .FourthSecRight {
+    margin-top: 20px;
+  }
+  .LeftletsTalk {
+    padding: 10px 0px;
+  }
+  .mt20cus {
+    margin-top: 26px !important;
+  }
+  .FormInputDivLanding {
+    padding: 30px 30px;
+}
+}
+@media screen and (max-width: 576px) {
+  .mobilenav {
+    width: 95%;
+  }
+  .courierImageDiv {
+    margin-top: -158px;
+  }
+  .courierImageDiv img {
+    width: 188px;
+  }
+  .logo {
+   width: 120px;
+    padding-left:10px;
+}
+  .EmporingData {
+    line-height: 28px;
+    font-size: 18px;
+}
+  .CardLanding {
+    padding: 15px 0px 15px 0px;
+  }
+  .exploreAnalyImage {
+    height: auto !important;
+  }
+  .landingPrimaryBtn.shadowBtn {
+    padding: 12px 8px;
+  }
+  .Btnmt {
+    margin: 20px auto 20px auto;
+  }
+  .landingPrimaryBtn {
+    line-height: 16px;
+    font-size: 12px;
+  }
+  .fourthSectionLanding {
+    padding: 20px 0px 20px 0px;
+    background-size: 100% auto;
+    background-position: top center;
+    background-repeat: no-repeat;
+  }
+  .thirdSectionLanding {
+    padding: 20px 0px;
+  }
+  .FifthSectionLanding {
+    padding: 20px 0px;
+  }
+  .FirstSectionLanding {
+    padding: 20px 0px 20px 0px;
+}
+  .secondSectionLanding {
+    padding: 20px 0px 20px 0px;
+}
+.ourService {
+ font-size: 12px;
+}
+  .Footersection {
+    padding: 20px 0px;
+    background-color: #101238;
+  }
+  .DataDriven {
+    padding: 0px 0px 0px 0px;
+}
+  .pridctivediv h4 {
+    line-height: 30px;
+    font-size: 16px;
+  }
+  .LetsTalkImage {
+    height: 60px;
+  }
+  /* .LetsTalkContainer {
+    margin-left: 26px;
+    padding: 6px;
+    height: 46px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  } */
+  .LetsTalkContainer h3 {
+    margin-bottom: 10px;
+}
+  .LetsTalkContainer p {
+    font-size: 14px;
+}
+.Addressdiv p ,.Phonediv p{
+  font-size: 14px;
+}
+  .LetsTalkContainer::after {
+    bottom: 1.1em;
+    border: 0.5em solid black;
+    border-color: transparent transparent #4ac4f3 #4ac4f3;
+  }
+  .hamburger-icon {
+    width: 20px;
+    margin-right: 4px
+}
+  .AddressImage {
+    width: 48px;
+    height: auto;
+  }
+  .FormDiv {
+    padding: 20px 0px;
+  }
+  .Footerlogo {
+    height: 46px;
+}
+  .FooterImage {
+    height: 24px;
+    margin-top: 20px;
+    margin-right: 16px;
+  }
+  .LeftSecLandingCont p {
+    margin-top: 12px;
+    font-size: 14px;
+}
+  .FormInputDivLanding {
+    padding: 12px 12px;
+}
+.MarginInputLanding {
+  margin: 0px 0px 10px 0px;
+}
+.buttontryNow {
+  font-size: 14px;
+ }
+ .mobilenav .mob-nav-content {
+  padding: 10px;
+}
+.header-container.sticky header {
+  padding: 10px 0px 10px 0px;
+  }
+  .header-container.sticky header .hamburger-icon {
+    width: 18px;
+}
+.fzres14{
+  font-size:14px;
+}
+.StartAnywhere {
+  margin-bottom: 6px;
+}
+}
+
+
+
+
+.mob-nav-content ul li .active:hover {
+  border-bottom: 2px solid red; /* Adjust the border-bottom styling as needed */
+  padding-bottom: 5px; /* Adjust the padding as needed */
+}

@@ -1,0 +1,56 @@
+.content-p{
+    color: #514a4a;
+    font-size: 16px;
+}
+.intro {
+    position: relative;
+    padding: 40px 15px 10px 15px;
+    text-align: center;
+    background: #f9f9f9;
+    border-bottom: 1px solid #e7e7e7;
+    margin-bottom: 40px;
+}
+.content-h2{
+    color: #514a4a;
+font-weight: 600;
+  align-items: center;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+}
+
+.more-btn{
+    text-align: end;
+    align-items: end;
+}
+
+.set-more{
+    display: flex;
+    justify-content: end;
+  
+   
+}
+.set-more a{
+    color: grey;
+    text-decoration: none;
+ padding-right: 20px;
+}
+svg{
+    fill:grey;
+}
+.intro{
+    background: #fff;
+    box-shadow: 5px 10px #888888;
+    margin: 0px;
+    padding: 0px;
+}
+.centered-wrapper{
+    margin-top: 5%;
+}
+
+.more-btn svg :hover{
+    fill: #000;
+}
+.more-btn :hover{
+    fill: #000;
+}

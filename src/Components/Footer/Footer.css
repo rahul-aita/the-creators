@@ -1,0 +1,42 @@
+.marquee-set{
+    /* width: 220px; */
+    /* margin-left: 30px; */
+    height: 205px;
+
+    font-weight: bold;
+    color: #000000;
+}
+
+ul {
+    list-style-type: none;
+}
+#blog-widget  li {
+    border-bottom: 1px  dotted rgb(107, 107, 107);
+    line-height: 3;
+    font-size: 14px;
+}
+#blog-widget  li:last-of-type{
+    border: none
+}
+
+#contact-widget li{
+    list-style-type: none;
+    font-size: 14px;
+    border-bottom: 1px  dotted rgb(107, 107, 107);
+    line-height: 3;
+}
+
+#bottomfooter {
+    background-color: rgb(60, 60, 60);
+    padding: 10px 30px 4px;
+}
+#bottomfooter  p {
+    color: #fff;
+}
+
+.social-links svg {
+    fill: gray;
+}
+.social-set svg:hover{
+fill: #fff;
+}

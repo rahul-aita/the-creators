@@ -1,0 +1,48 @@
+.bgtitle {
+    margin-bottom: 20px;
+    width: 95%;
+    height: 25px;
+}
+
+span.caption {
+    position: relative;
+    clear: both;
+    font-size: 12px;
+    background: #fff;
+    color: #444;
+    line-height: 40px;
+    width: 100%;
+    left: 0;
+}
+
+.card{
+    padding:0;
+    width: 800px;
+  }
+ .card-title a{
+    text-decoration: none;
+    color: #444;
+    font-size: 14px;
+    align-items: center;
+    text-align: center;
+ }
+ 
+
+
+  .owl-nav button.owl-prev {
+    left: 0;
+  }
+  .owl-nav button.owl-next {
+    right: 0;
+  }
+
+  .owl-nav button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background: rgba(255, 255, 255, 0.38) !important;
+  }
+ 
+  .owl-nav button:focus {
+      outline: none;
+  }
